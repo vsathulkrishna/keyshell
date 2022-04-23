@@ -12,11 +12,17 @@ jobs:
       - checkout
       - node/install-packages:
           pkg-manager: npm
+
       - run:
           command: npm install
           name: Install packages
+
       - run:
-          command: npm build
+          command: npm install -g @angular/cli
+          name: Install Angular
+
+      - run:
+          command: ng build
           name: Build apps
 
 workflows:
