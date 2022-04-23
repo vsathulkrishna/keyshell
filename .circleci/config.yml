@@ -18,7 +18,7 @@ jobs:
           name: Install packages
 
       - run:
-          command: npm install -g @angular/cli
+          command: npm install @angular/cli
           name: Install Angular
 
       - run:
